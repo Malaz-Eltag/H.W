@@ -1,8 +1,12 @@
- #include <stdio.h>
+#include <stdio.h>
 int main() {
 
-    printf("Hello world");
-    printf("\nHello Malaz");
-    
+char A = 'M';
+char L = 'A';
+char I = 'L';
+char K = 'Z';
+int  O = 22;
+printf("%c%c%c%C%c\n", A,L,I,L,K);
+printf("%d",O);
     return(0);
 }
