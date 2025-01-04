@@ -8,15 +8,13 @@ int main () {
        
         printf("\n");
     for (int x=1;x<4;x++) {
-       
-        for(int y=1;y<2;y++){
-            printf("#");}
+           
+        printf("#");
       
         for (int y=1;y<9;y++){
             printf("*");}
-      
-        for(int o=10;o>9;o--){
-            printf("#"); }
+
+            printf("#"); 
     printf("\n");}
 int u = 0;
 do { 
