@@ -4,7 +4,7 @@ int main () {
     do { 
         printf("#");
         m++;
-        }while ( m < 10 );
+    }while ( m < 10 );
        
         printf("\n");
     for (int x=1;x<4;x++) {
@@ -18,10 +18,10 @@ int main () {
         for(int o=10;o>9;o--){
             printf("#"); }
     printf("\n");}
-int u = 0;
-do { 
-    printf("#");
-    u++;
+    int u = 0;
+    do { 
+        printf("#");
+        u++;    
     }while ( u < 10 );
     
     

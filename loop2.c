@@ -1,27 +1,29 @@
 #include <stdio.h>
 int main () {  
-    int m=0;
-    do { 
-        printf("#");
-        m++;
-        }while ( m < 10 );
-       
-        printf("\n");
-    for (int x=1;x<4;x++) {
-           
-        printf("#");
-      
-        for (int y=1;y<9;y++){
-            printf("*");}
+int u = 0;   
+int m = 0;
 
-            printf("#"); 
-    printf("\n");}
-int u = 0;
+while ( u < 10 ){
+    printf("# ");
+    u++; }
+    printf("\n");
+
+for (int x=0;x<4;x++) {
+            
+    printf("# ");
+      
+    for (int y=0;y<8;y++){
+            
+        printf("* "); }
+
+    printf("# "); 
+    printf("\n"); }
+
 do { 
-    printf("#");
-    u++;
-    }while ( u < 10 );
-    
+    printf("# ");
+    m++;
+    }while ( m < 10 );
+       
     
 
     return(0);
