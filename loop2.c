@@ -4,23 +4,23 @@ int u = 0;
 int m = 0;
 
 while ( u < 10 ){
-    printf("# ");
+    printf("#" );
     u++; }
     printf("\n");
 
-for (int x=0;x<4;x++) {
+for (int x=0;x<3;x++) {
             
-    printf("# ");
+    printf("#");
       
     for (int y=0;y<8;y++){
             
-        printf("* "); }
+        printf("*"); }
 
-    printf("# "); 
+    printf("#" ); 
     printf("\n"); }
 
 do { 
-    printf("# ");
+    printf("#");
     m++;
     }while ( m < 10 );
        
