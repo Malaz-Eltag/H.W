@@ -20,10 +20,10 @@ printf("");}
 printf("\n===================\n");
 
 int r =0;
-while (y[r] != '\0'){
-    printf("%d ",y[r]);
-    r++;
-}
+//while (y[r] != '\0'){
+  //  printf("%d ",y[r]);
+    //r++;
+//}
 
 
 

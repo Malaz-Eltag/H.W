@@ -1,36 +1,71 @@
-#include <stdio.h> 
+#include <stdio.h>
+int First_Name(char First[]) {
+    int F = 0;
+    while(First[F] != '\0') {
+        printf("%c",First[F]);
+        F++;
+    }
+}
 
-char First_Name[6] = {'M' , 'a' ,'l', 'a', 'z', '\0'};
-char Middle_Name[13] = "Eltag Mohamed";
-char Last_Name[9] = "Abdallah";
-int Age[2] = {2,'\0' };
-char Jop[8] = {'S','t', 'u', 'd' ,'e', 'n','t' };
-int u ,w,s ,i =0 ;
+int Middle_Name(char Middile[]) {
+    int M = 0;
+    while(Middile[M] != '\0') {
+        printf("%c",Middile[M]);
+        M++;
+    }
+}
+
+int Last_Name(char Last[]) {
+    int L = 0;
+    while(Last[L] != '\0') {
+        printf("%c",Last[L]);
+        L++;
+    }
+}
+
+int Jop(char Jo[]) {
+    int J = 0;
+    while(Jo[J] != '\0') {
+        printf("%c",Jo[J]);
+        J++;
+    }
+}
+
 int main () {
-printf("Your First Name is: ");
-for( u =0; u < 6 ; u++){
-    printf("%c",First_Name[u]); }
+char Name[6] = {'M' , 'a' ,'l', 'a', 'z', '\0'};
+char Name_2[15] = "Eltag Mohamed ";
+char Name_3[9] = "Abdallah";
+int Age = 2;
+char Jop_1[8] = {'S','t', 'u', 'd' ,'e', 'n','t' };
 
+printf("Your First Name is : " );
+First_Name(Name);
 printf("\n");
-printf("Your Middle Name is :");
-for( w =0; w < 13 ; w++){
-    printf("%c",Middle_Name[w]); }
-printf("\n");
-printf("Your Last Name is :");
-for(s = 0; s < 8 ; s++){
-    printf("%c",Last_Name[s]); }
 
+printf("Your Middle Name is : " );
+Middle_Name(Name_2);
 printf("\n");
-printf("Your Name :%s %s",First_Name,Last_Name);
-printf("\n"); 
-printf("Your Full Name is :%s %s %s",First_Name,Middle_Name,Last_Name);
 
-
-printf("\n"); 
-printf("Your Age is :%d%d", Age[0],Age[0]);
+printf("Your Last Name is : " );
+Last_Name(Name_3);
 printf("\n");
-printf("Your Job is : ");
-for( i =0; i < 7 ; i++){
-    printf("%c",Jop[i]);  }
+
+printf("Your Full Name is : ");
+First_Name(Name);
+printf(" ");
+Middle_Name(Name_2);
+printf(" ");
+Last_Name(Name_3);
+printf("\n");
+
+printf("Your Age is : %d%d", Age,Age);
+printf("\n");
+
+printf("Your Jop is : " );
+Jop(Jop_1);
+printf("\n");
+
+    return(0);
 
 }
+
