@@ -39,7 +39,6 @@ int Age = 2;
 char Jop_1[8] = {'S','t', 'u', 'd' ,'e', 'n','t' };
 
 printf("Your First Name is : " );
-First_Name(Name);
 printf("\n");
 
 printf("Your Middle Name is : " );
