@@ -1,132 +1,73 @@
-
+#include<stdio.h>
 //Calculator Project 
-
-#include <stdio.h>
-int Add(float First_Number[10], float Second_Number[10] )
+// 
+int Add(int first, int second )
 {
-    float result = First_Number[10]+ Second_Number[10] ;
+    int result = first + second  ;
     return result ;
     }
-int sub(float First_Number[10], float Second_Number[10] )
+int sub(int first , int second )
 {
-    float result2 = First_Number[10] - Second_Number[10] ;
+    int result2 = first - second ;
     return result2 ;
     }
 
-int Mult(float First_Number[10], float Second_Number[10] )
+int Mult(int first , int second  )
 {
-    float result3 = First_Number[10] * Second_Number[10] ;
+    int result3 = first  * second ;
     return result3 ;
     }
 
-int Div(float First_Number[10], float Second_Number[10] )
+int Div(int first , int second )
 {
-    float result4 = First_Number[10] / Second_Number[10] ;
+    int result4 = first / second  ;
     return result4 ;
     }
 
+int main () {
+int first,secound,result, r, n,w;
 
-int main(){
+char name [20] ,op;
 
-char Name[50] ;
-float First_Number[10];
-float Second_Number[10];
-int s; 
-int u ,v;
-char choice ;
-float num[12] = {1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0};
-
-
-printf("Enter your name( Just character ): ");
-fgets(Name,sizeof(Name),stdin);
-for (u = 0; u < 50; u++) {
-        if (Name[u] >= '0' && Name[u] <= '9') {
+printf("Enter your name: ");
+scanf("%s",&name);
+for (n = 0; n < 20; n++) {
+        if (name[n] >= '0' && name[n] <= '9') {
             printf("wrong value, please enter a character\n");
-            return(1);
-        }
-    }
- if (u > 49) {
-printf(" Greeting ,%s",Name); }        
+            return(1); }  }
+        if ( n > 19 ) {
+        printf(" Greeting, %s \n", name); }
 
 
-printf("Please Entar First Number : ");
- scanf("%f",&First_Number[10]);
+printf("Enter the calculationas as A + B \n");
 
-for (s = 0; s < 10 ; s++) {
-    
-        if (  First_Number[10] < num[12] )   { 
-        
-            printf("wrong value, please enter a Integer \n");
+scanf("%d %c %d",&first,&op,&secound);
 
-            return(1);
-            }
-
-       else {
-        
-             printf("");
-
-            }
-            }   
-        if  (s > 9) {
-            printf(" ");
-            
-        }
-
-
-printf("Select a calculation : + , - , /, * \n "); 
-
-scanf(" %c",&choice);
-
-if (choice == '+' || choice == '/' || choice == '-' || choice == '*' ) {
-    printf("");
-     }
-else {
-    printf("\nWrong choice , please select a valid choice \n");
-    return(1);}
-
-printf("\nPlease Entar Second Number : ");
-scanf("%f",&Second_Number[10]);
-
-for (v = 0; v < 10 ; v++) {
-    if (Second_Number[10] < num[12] ) {
-        //printf(" ");
-    
-        printf("\nwrong value, please enter a Integer \n");
-            return(1);
-    
+int Add1= Add(first, secound);
+int sub1 = sub(first, secound);
+int Mult1  = Mult(first, secound);
+int Div1 = Div(first, secound);
+     
+switch (op) {
+    case '+':
+    result = Add1 ;
+    break;
+    case '-':
+    result = sub1 ;
+    break;
+    case '*':
+    result = Mult1 ;
+    break;
+    case '/':
+    result = Div1 ;
+    break;
+    default:
+    printf(" Wrong entry please try again\n");
+    return(1);
     }
 
-    else {
-        printf(""); 
-    }
-    }
-    
 
-float Add1 = Add(First_Number, Second_Number);
-float sub1 = sub(First_Number, Second_Number);
-float Mult1  = Mult(First_Number, Second_Number);
-float Div1 = Div(First_Number, Second_Number);
+printf("%d %c %d = %d",first ,op,secound,result );
 
-
-if ( choice == '+') { 
-printf("Your equation is : \n%.2f %c %.2f ",First_Number[10],choice,Second_Number[10]);
-printf("\nThe result is : %.2f ",Add1); }
-
-
-else if ( choice == '-') { 
-printf("Your equation is : \n%.2f %c %.2f " ,First_Number[10],choice,Second_Number[10]); 
-printf("\nThe result is : %.2f ",sub1);}
-
-
-else if ( choice == '/')   {
-    printf("Your equation is : \n%.2f %c %.2f ",First_Number[10],choice,Second_Number[10]);
-    printf("\nThe result is : %.2f ",Div1); }
-
-else if (choice == '*') {
-    printf("Your equation is : \n%.2f %c %.2f ",First_Number[10],choice,Second_Number[10] );
-    printf("\nThe result is : %.2f ",Mult1); }
-
-else {printf("Invalid input"); }
-
-    return (0);
+    return(0);
 }
