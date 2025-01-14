@@ -77,59 +77,42 @@ print("="*50)
 
 
 k = 1
-while k < 3:
-    print("  1", end="")
+z = 1
+while k < 4:
+    print("  ",end="")
+    print(z, end="")
     k += 1
     print("")
     for y in range(3):
             k += 1
             if k == 3:
                 print(f" ",end="")
-            print(f"1",end="")  
-            # k =1
+            print(z,end="")  
             k += 1
     print("")
     for i in range (5) :
-        print(f"1",end="")
-
-print("")
-print("="*50)
-
-
-k = 1
-while k < 3:
-    print("  1", end="")
-    k += 1
-    print("")
-    for y in range(3):
-            k += 1
-            if k == 3:
-                print(f" ",end="")
-            print(f"1",end="")  
-            # k =1
-            k += 1
+        print(z,end="")
     print("")
     for i in range (5) :
-        print(f"1",end="")
+            print(z,end="")
     print("")
-    for i in range (5) :
-            print(f"1",end="")
-    print("")
- 
-    print(" 11", end="")
+    print(" ",end="" ) 
+
+    for u in range (2) :
+        print( z,end="")
+    # print( z,end="")
     k += 1
     # print("")
     
     for y in range(1):
                 k += 1
                 if k == 3:
-                    print(f" ",end="")
-                print(f"1",end="")  
-                # k =1
-                k += 1
-    print("")
-    print("  1")
-
+                    print(f"  ",end="  ")
+                print(z,end=" ")  
+                k+= 1
+    print("  ")                     
+    print("  ",end="" ) 
+    print(z)
         
         
         
