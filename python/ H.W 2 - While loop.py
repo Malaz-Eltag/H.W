@@ -34,6 +34,26 @@ while c < 7 :
 print("")
 print("="*50)
 
+p = 1
+d = 1
+while p < 4:
+    print("  ",end="")
+    print(d, end="")
+    p += 1
+    print("")
+    for y in range(3):
+            p += 1
+            if p == 3:
+                print(f" ",end="")
+            print(d,end="")  
+            p += 1
+    print("")
+    for i in range (5) :
+        print(d,end="")
+    print("")
+
+print("="*50)
+
 y = 0
 i =1
 while y < 3:
