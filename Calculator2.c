@@ -1,6 +1,7 @@
-#include<stdio.h>
 //Calculator Project 
-// 
+
+#include<stdio.h>
+
 int Add(int first, int second )
 {
     int result = first + second  ;

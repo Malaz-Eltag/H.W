@@ -1,4 +1,4 @@
-# if & eles #
+# if & else #
 Degree = 95
 if Degree >= 50 :
     print(f"\nThe student is successful with a rate of {Degree}🎉🎊\n")
@@ -7,7 +7,7 @@ else :
 print("="*50)
 
 
-# if & ilef & eles #
+# if & ilef & else #
 X = 10 
 if X > 0 :
     print("\nX is positive\n")
@@ -24,3 +24,4 @@ for letter in Y:
     print(letter)
 print("="*50)
 
+ 
