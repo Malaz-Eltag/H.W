@@ -19,32 +19,18 @@ n.insert(1,19)
 print(n)
 for w in n:
     print(w)
-# print("="*50)
-
-# for w in range(5) :
-#     q[w] +=1
-
-# print(q)
-# t =1
-# 
-# for p in range(6) :
-    # t =t + 1
-    # t.append(t,1)
-    # t += 1
-# 
-# print(u)
-# 
 
 
-# 
-# i = 0
-# while i < 3 :   
-#    
-    # u.insert(i,1)
+print("="*50)
+
+i = 0
+while i < 3 :   
+   
+    u.insert(i,1)
     
-    # i += 1
-    # print(u)
-# 
+    i += 1
+    print(u)
+
 print("="*50)
 
 u =[1,2,3,4,5]
@@ -69,11 +55,6 @@ for i in (u) :
     if isinstance(i, int):
         y += i
 print(y)
-
-
-
-
-
 
 print("="*50)
 

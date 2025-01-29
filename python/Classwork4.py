@@ -67,7 +67,7 @@
 # for i in range(len(y)) :
 #    x[list(x.keys())[i]] = y[i]
 # print(x)
-# 
+
 
 
 
@@ -83,29 +83,29 @@
 
 
 
-# 
+
 # x ={"first" : [1,2,3] , "second": "me" , "third" :50.2 ,"forth": 0,"fifth" : [4,5,6]}
 # print(f"\n{x}\n\n x after swap is :\n")
 # values =list(x.values()) 
 # values.reverse()
 # for i ,key in enumerate(x) :
-    # x[key] = values[i]
+#     x[key] = values[i]
 # print(x)
-# 
 
 
-# x ={"first" : [1,2,3] , "second": "me" , "third" :50.2 ,"forth": 0,"fifth" : [4,5,6]}
-# print(f"\n{x}\n\n x after swap is :\n")
-# y =list(x.values()) 
-# print(y)
-# for i in range(len(y) // 2): 
-#     # temp = y[i]
-#     # y[i] = y[len(y) - i - 1]
-#     y[len(y) - i - 1] #= y[i]# y[len(y) - i - 1] #temp 
 
-# for i in range(len(y)) :
-#    x[list(x.keys())[i]] =    y[len(y) - i - 1] # y[i]
-# print(x)
+x ={"first" : [1,2,3] , "second": "me" , "third" :50.2 ,"forth": 0,"fifth" : [4,5,6]}
+print(f"\n{x}\n\n x after swap is :\n")
+y =list(x.values()) 
+print(y)
+for i in range(len(y) // 2): 
+    temp = y[i]
+    y[i] = y[len(y) - i - 1]
+    y[len(y) - i - 1] = y[i]# y[len(y) - i - 1] #temp 
+
+for i in range(len(y)) :
+   x[list(x.keys())[i]] =  y[i]
+print(x)
 
 
 
